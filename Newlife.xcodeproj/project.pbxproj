@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C372F38E2AF503B20094450E /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372F38D2AF503B20094450E /* TabBar.swift */; };
 		C38C408D2AF3A10A00652E39 /* NewlifeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38C408C2AF3A10A00652E39 /* NewlifeApp.swift */; };
 		C38C408F2AF3A10A00652E39 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38C408E2AF3A10A00652E39 /* ContentView.swift */; };
 		C38C40912AF3A10C00652E39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C38C40902AF3A10C00652E39 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 		C38C409E2AF3A10D00652E39 /* NewlifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38C409D2AF3A10D00652E39 /* NewlifeTests.swift */; };
 		C38C40A82AF3A10D00652E39 /* NewlifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38C40A72AF3A10D00652E39 /* NewlifeUITests.swift */; };
 		C38C40AA2AF3A10D00652E39 /* NewlifeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38C40A92AF3A10D00652E39 /* NewlifeUITestsLaunchTests.swift */; };
+		C38C40B82AF3B24200652E39 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C38C40B72AF3B24200652E39 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C372F38D2AF503B20094450E /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		C38C40892AF3A10A00652E39 /* Newlife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Newlife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C38C408C2AF3A10A00652E39 /* NewlifeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewlifeApp.swift; sourceTree = "<group>"; };
 		C38C408E2AF3A10A00652E39 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +47,8 @@
 		C38C40A32AF3A10D00652E39 /* NewlifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewlifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C38C40A72AF3A10D00652E39 /* NewlifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewlifeUITests.swift; sourceTree = "<group>"; };
 		C38C40A92AF3A10D00652E39 /* NewlifeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewlifeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C38C40B62AF3ACA400652E39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C38C40B72AF3B24200652E39 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,9 +76,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C372F38C2AF5039E0094450E /* UIItems */ = {
+			isa = PBXGroup;
+			children = (
+				C372F38D2AF503B20094450E /* TabBar.swift */,
+			);
+			path = UIItems;
+			sourceTree = "<group>";
+		};
 		C38C40802AF3A10A00652E39 = {
 			isa = PBXGroup;
 			children = (
+				C372F38C2AF5039E0094450E /* UIItems */,
+				C38C40B72AF3B24200652E39 /* Launch Screen.storyboard */,
 				C38C408B2AF3A10A00652E39 /* Newlife */,
 				C38C409C2AF3A10D00652E39 /* NewlifeTests */,
 				C38C40A62AF3A10D00652E39 /* NewlifeUITests */,
@@ -94,6 +109,7 @@
 		C38C408B2AF3A10A00652E39 /* Newlife */ = {
 			isa = PBXGroup;
 			children = (
+				C38C40B62AF3ACA400652E39 /* Info.plist */,
 				C38C408C2AF3A10A00652E39 /* NewlifeApp.swift */,
 				C38C408E2AF3A10A00652E39 /* ContentView.swift */,
 				C38C40902AF3A10C00652E39 /* Assets.xcassets */,
@@ -231,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C38C40B82AF3B24200652E39 /* Launch Screen.storyboard in Resources */,
 				C38C40942AF3A10C00652E39 /* Preview Assets.xcassets in Resources */,
 				C38C40912AF3A10C00652E39 /* Assets.xcassets in Resources */,
 			);
@@ -257,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C372F38E2AF503B20094450E /* TabBar.swift in Sources */,
 				C38C408F2AF3A10A00652E39 /* ContentView.swift in Sources */,
 				C38C408D2AF3A10A00652E39 /* NewlifeApp.swift in Sources */,
 			);
@@ -347,7 +365,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -404,7 +422,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -425,11 +443,15 @@
 				DEVELOPMENT_TEAM = Z3264CP7F3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Newlife/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Newlife;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,11 +476,15 @@
 				DEVELOPMENT_TEAM = Z3264CP7F3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Newlife/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Newlife;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
