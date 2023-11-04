@@ -7,15 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C372F38E2AF503B20094450E /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372F38D2AF503B20094450E /* TabBar.swift */; };
+		C372F3912AF50DA30094450E /* NewsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372F3902AF50DA30094450E /* NewsItem.swift */; };
+		C372F3952AF50FE10094450E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372F3942AF50FE10094450E /* HomeView.swift */; };
+		C372F3972AF50FEE0094450E /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372F3962AF50FEE0094450E /* ScanView.swift */; };
+		C372F3992AF50FF90094450E /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372F3982AF50FF90094450E /* ContactsView.swift */; };
+		C372F39B2AF510020094450E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372F39A2AF510020094450E /* SettingsView.swift */; };
+		C372F39F2AF529740094450E /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372F39E2AF529740094450E /* Tab.swift */; };
+		C372F3A22AF529C00094450E /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372F3A12AF529C00094450E /* TabBarView.swift */; };
+		C372F3A42AF529DA0094450E /* TabShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372F3A32AF529DA0094450E /* TabShape.swift */; };
+		C372F3A62AF529EE0094450E /* TabPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372F3A52AF529EE0094450E /* TabPosition.swift */; };
+		C372F3A82AF5352E0094450E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372F3A72AF5352E0094450E /* ContentView.swift */; };
 		C38C408D2AF3A10A00652E39 /* NewlifeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38C408C2AF3A10A00652E39 /* NewlifeApp.swift */; };
-		C38C408F2AF3A10A00652E39 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38C408E2AF3A10A00652E39 /* ContentView.swift */; };
+		C38C408F2AF3A10A00652E39 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38C408E2AF3A10A00652E39 /* NewsView.swift */; };
 		C38C40912AF3A10C00652E39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C38C40902AF3A10C00652E39 /* Assets.xcassets */; };
 		C38C40942AF3A10C00652E39 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C38C40932AF3A10C00652E39 /* Preview Assets.xcassets */; };
 		C38C409E2AF3A10D00652E39 /* NewlifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38C409D2AF3A10D00652E39 /* NewlifeTests.swift */; };
 		C38C40A82AF3A10D00652E39 /* NewlifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38C40A72AF3A10D00652E39 /* NewlifeUITests.swift */; };
 		C38C40AA2AF3A10D00652E39 /* NewlifeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38C40A92AF3A10D00652E39 /* NewlifeUITestsLaunchTests.swift */; };
 		C38C40B82AF3B24200652E39 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C38C40B72AF3B24200652E39 /* Launch Screen.storyboard */; };
+		C3FBFCAA2AF5459000A907D3 /* NewsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FBFCA92AF5459000A907D3 /* NewsListView.swift */; };
+		C3FBFCAC2AF5607100A907D3 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FBFCAB2AF5607100A907D3 /* NewsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +47,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C372F38D2AF503B20094450E /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		C372F3902AF50DA30094450E /* NewsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItem.swift; sourceTree = "<group>"; };
+		C372F3942AF50FE10094450E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C372F3962AF50FEE0094450E /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
+		C372F3982AF50FF90094450E /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		C372F39A2AF510020094450E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		C372F39E2AF529740094450E /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		C372F3A12AF529C00094450E /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		C372F3A32AF529DA0094450E /* TabShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabShape.swift; sourceTree = "<group>"; };
+		C372F3A52AF529EE0094450E /* TabPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPosition.swift; sourceTree = "<group>"; };
+		C372F3A72AF5352E0094450E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C38C40892AF3A10A00652E39 /* Newlife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Newlife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C38C408C2AF3A10A00652E39 /* NewlifeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewlifeApp.swift; sourceTree = "<group>"; };
-		C38C408E2AF3A10A00652E39 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C38C408E2AF3A10A00652E39 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		C38C40902AF3A10C00652E39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C38C40932AF3A10C00652E39 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C38C40992AF3A10D00652E39 /* NewlifeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewlifeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +69,8 @@
 		C38C40A92AF3A10D00652E39 /* NewlifeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewlifeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C38C40B62AF3ACA400652E39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C38C40B72AF3B24200652E39 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		C3FBFCA92AF5459000A907D3 /* NewsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListView.swift; sourceTree = "<group>"; };
+		C3FBFCAB2AF5607100A907D3 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,16 +101,60 @@
 		C372F38C2AF5039E0094450E /* UIItems */ = {
 			isa = PBXGroup;
 			children = (
-				C372F38D2AF503B20094450E /* TabBar.swift */,
+				C372F3A02AF5298C0094450E /* TabBar */,
+				C38C40B72AF3B24200652E39 /* Launch Screen.storyboard */,
+				C3FBFCA92AF5459000A907D3 /* NewsListView.swift */,
 			);
 			path = UIItems;
+			sourceTree = "<group>";
+		};
+		C372F38F2AF50D960094450E /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				C372F38C2AF5039E0094450E /* UIItems */,
+				C372F3902AF50DA30094450E /* NewsItem.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		C372F39C2AF5100D0094450E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C372F3982AF50FF90094450E /* ContactsView.swift */,
+				C38C408E2AF3A10A00652E39 /* NewsView.swift */,
+				C372F39A2AF510020094450E /* SettingsView.swift */,
+				C372F3962AF50FEE0094450E /* ScanView.swift */,
+				C372F3942AF50FE10094450E /* HomeView.swift */,
+				C372F3A72AF5352E0094450E /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C372F39D2AF529460094450E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C372F39E2AF529740094450E /* Tab.swift */,
+				C3FBFCAB2AF5607100A907D3 /* NewsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C372F3A02AF5298C0094450E /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				C372F3A12AF529C00094450E /* TabBarView.swift */,
+				C372F3A32AF529DA0094450E /* TabShape.swift */,
+				C372F3A52AF529EE0094450E /* TabPosition.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 		C38C40802AF3A10A00652E39 = {
 			isa = PBXGroup;
 			children = (
-				C372F38C2AF5039E0094450E /* UIItems */,
-				C38C40B72AF3B24200652E39 /* Launch Screen.storyboard */,
+				C372F39D2AF529460094450E /* Model */,
+				C372F38F2AF50D960094450E /* Items */,
+				C372F39C2AF5100D0094450E /* Views */,
 				C38C408B2AF3A10A00652E39 /* Newlife */,
 				C38C409C2AF3A10D00652E39 /* NewlifeTests */,
 				C38C40A62AF3A10D00652E39 /* NewlifeUITests */,
@@ -111,7 +177,6 @@
 			children = (
 				C38C40B62AF3ACA400652E39 /* Info.plist */,
 				C38C408C2AF3A10A00652E39 /* NewlifeApp.swift */,
-				C38C408E2AF3A10A00652E39 /* ContentView.swift */,
 				C38C40902AF3A10C00652E39 /* Assets.xcassets */,
 				C38C40922AF3A10C00652E39 /* Preview Content */,
 			);
@@ -274,9 +339,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C372F38E2AF503B20094450E /* TabBar.swift in Sources */,
-				C38C408F2AF3A10A00652E39 /* ContentView.swift in Sources */,
+				C3FBFCAC2AF5607100A907D3 /* NewsModel.swift in Sources */,
+				C372F3972AF50FEE0094450E /* ScanView.swift in Sources */,
+				C372F3A42AF529DA0094450E /* TabShape.swift in Sources */,
+				C372F3912AF50DA30094450E /* NewsItem.swift in Sources */,
+				C3FBFCAA2AF5459000A907D3 /* NewsListView.swift in Sources */,
+				C372F3A22AF529C00094450E /* TabBarView.swift in Sources */,
+				C372F39B2AF510020094450E /* SettingsView.swift in Sources */,
+				C38C408F2AF3A10A00652E39 /* NewsView.swift in Sources */,
+				C372F3952AF50FE10094450E /* HomeView.swift in Sources */,
+				C372F3A62AF529EE0094450E /* TabPosition.swift in Sources */,
+				C372F39F2AF529740094450E /* Tab.swift in Sources */,
+				C372F3A82AF5352E0094450E /* ContentView.swift in Sources */,
 				C38C408D2AF3A10A00652E39 /* NewlifeApp.swift in Sources */,
+				C372F3992AF50FF90094450E /* ContactsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
