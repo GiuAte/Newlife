@@ -13,9 +13,12 @@ struct TabBarView: View {
     @State private var activeTab: Tab = .home
     @Namespace private var animation
     @State private var tabShapePosition: CGPoint = .zero
+    @AppStorage("isDarkModeEnabled") private var isDarkModeEnabled = false
+    
     init() {
         UITabBar.appearance().isHidden = true
     }
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -57,13 +60,14 @@ struct TabBarView: View {
         .padding(.vertical, 10)
         .background(content: {
             TabShape(midpoint: tabShapePosition.x)
-                .fill(.white)
+                .fill(Color("whiteBackground"))
                 .ignoresSafeArea()
                 .shadow(color: tint.opacity(0.2), radius: 5, x: 0, y: -5)
                 .blur(radius: 2)
                 .padding(.top, 25)
                 
         })
+        .environment(\.colorScheme, isDarkModeEnabled ? .dark : .light)
         /// Adding Animation
         .animation(.interactiveSpring(response: 0.6, dampingFraction: 0.7, blendDuration: 0.7), value: activeTab)
     }
