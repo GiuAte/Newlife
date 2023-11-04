@@ -10,10 +10,12 @@ import SwiftUI
 @main
 struct NewlifeApp: App {
     
+    @AppStorage("isDarkModeEnabled") private var isDarkModeEnabled = false
+    
     var body: some Scene {
-      
         WindowGroup {
                 ContentView()
+                .environment(\.colorScheme, isDarkModeEnabled ? .dark : .light)
         }
     }
 }

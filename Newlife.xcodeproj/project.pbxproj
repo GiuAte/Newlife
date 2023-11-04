@@ -98,6 +98,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C3366C352AF6E953007CF373 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		C372F38C2AF5039E0094450E /* UIItems */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +159,7 @@
 		C38C40802AF3A10A00652E39 = {
 			isa = PBXGroup;
 			children = (
+				C3366C352AF6E953007CF373 /* ViewModels */,
 				C372F39D2AF529460094450E /* Model */,
 				C372F38F2AF50D960094450E /* Items */,
 				C372F39C2AF5100D0094450E /* Views */,
