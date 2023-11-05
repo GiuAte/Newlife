@@ -11,7 +11,7 @@ class NewsModel: ObservableObject {
     @Published var articles: [Article] = []
 
     func fetchDataFromAPI() {
-        let apiKey = "2716ef1404964bfabf6993c15eec2c87"
+        let apiKey = "myApiKey"
         let searchTerm = "riciclo"
         let fromDate = "2023-11-03"
         let language = "it"

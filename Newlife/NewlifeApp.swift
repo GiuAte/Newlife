@@ -14,7 +14,7 @@ struct NewlifeApp: App {
     
     var body: some Scene {
         WindowGroup {
-                ContentView()
+            ContentView()
                 .environment(\.colorScheme, isDarkModeEnabled ? .dark : .light)
         }
     }

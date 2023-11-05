@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct ContactsView: View {
     var body: some View {
-        Text("Contacts View")
+        
+        Text("Hello")
     }
 }
 

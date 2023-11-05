@@ -12,9 +12,10 @@
 		C36CEC3C2AF811D7000CE30D /* TermsAndConditionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36CEC3B2AF811D7000CE30D /* TermsAndConditionsView.swift */; };
 		C36CEC3F2AF81424000CE30D /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36CEC3E2AF81424000CE30D /* BackButton.swift */; };
 		C36CEC412AF81728000CE30D /* LicenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36CEC402AF81728000CE30D /* LicenseView.swift */; };
+		C36CEC442AF81AD6000CE30D /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = C36CEC432AF81AD6000CE30D /* CodeScanner */; };
 		C372F3912AF50DA30094450E /* NewsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372F3902AF50DA30094450E /* NewsItem.swift */; };
 		C372F3952AF50FE10094450E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372F3942AF50FE10094450E /* HomeView.swift */; };
-		C372F3972AF50FEE0094450E /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372F3962AF50FEE0094450E /* ScanView.swift */; };
+		C372F3972AF50FEE0094450E /* ViewInsideScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372F3962AF50FEE0094450E /* ViewInsideScanView.swift */; };
 		C372F3992AF50FF90094450E /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372F3982AF50FF90094450E /* ContactsView.swift */; };
 		C372F39B2AF510020094450E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372F39A2AF510020094450E /* SettingsView.swift */; };
 		C372F39F2AF529740094450E /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372F39E2AF529740094450E /* Tab.swift */; };
@@ -30,6 +31,9 @@
 		C38C40A82AF3A10D00652E39 /* NewlifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38C40A72AF3A10D00652E39 /* NewlifeUITests.swift */; };
 		C38C40AA2AF3A10D00652E39 /* NewlifeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38C40A92AF3A10D00652E39 /* NewlifeUITestsLaunchTests.swift */; };
 		C38C40B82AF3B24200652E39 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C38C40B72AF3B24200652E39 /* Launch Screen.storyboard */; };
+		C3D894C62AF81D26005A3FA7 /* ScannerDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D894C52AF81D26005A3FA7 /* ScannerDataViewModel.swift */; };
+		C3D894C82AF81D8B005A3FA7 /* DataScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D894C72AF81D8B005A3FA7 /* DataScannerView.swift */; };
+		C3D894CA2AF8209B005A3FA7 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D894C92AF8209B005A3FA7 /* ScanView.swift */; };
 		C3FBFCAA2AF5459000A907D3 /* NewsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FBFCA92AF5459000A907D3 /* NewsListView.swift */; };
 		C3FBFCAC2AF5607100A907D3 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FBFCAB2AF5607100A907D3 /* NewsModel.swift */; };
 /* End PBXBuildFile section */
@@ -59,7 +63,7 @@
 		C36CEC402AF81728000CE30D /* LicenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseView.swift; sourceTree = "<group>"; };
 		C372F3902AF50DA30094450E /* NewsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItem.swift; sourceTree = "<group>"; };
 		C372F3942AF50FE10094450E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		C372F3962AF50FEE0094450E /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
+		C372F3962AF50FEE0094450E /* ViewInsideScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInsideScanView.swift; sourceTree = "<group>"; };
 		C372F3982AF50FF90094450E /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 		C372F39A2AF510020094450E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		C372F39E2AF529740094450E /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
@@ -79,6 +83,9 @@
 		C38C40A92AF3A10D00652E39 /* NewlifeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewlifeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C38C40B62AF3ACA400652E39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C38C40B72AF3B24200652E39 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		C3D894C52AF81D26005A3FA7 /* ScannerDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerDataViewModel.swift; sourceTree = "<group>"; };
+		C3D894C72AF81D8B005A3FA7 /* DataScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataScannerView.swift; sourceTree = "<group>"; };
+		C3D894C92AF8209B005A3FA7 /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
 		C3FBFCA92AF5459000A907D3 /* NewsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListView.swift; sourceTree = "<group>"; };
 		C3FBFCAB2AF5607100A907D3 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C36CEC442AF81AD6000CE30D /* CodeScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,7 +175,7 @@
 				C372F3982AF50FF90094450E /* ContactsView.swift */,
 				C38C408E2AF3A10A00652E39 /* NewsView.swift */,
 				C36CEC382AF8039B000CE30D /* Settings */,
-				C372F3962AF50FEE0094450E /* ScanView.swift */,
+				C3D894C42AF81D06005A3FA7 /* Scan */,
 				C372F3942AF50FE10094450E /* HomeView.swift */,
 				C372F3A72AF5352E0094450E /* ContentView.swift */,
 			);
@@ -255,6 +263,17 @@
 			path = NewlifeUITests;
 			sourceTree = "<group>";
 		};
+		C3D894C42AF81D06005A3FA7 /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				C372F3962AF50FEE0094450E /* ViewInsideScanView.swift */,
+				C3D894C52AF81D26005A3FA7 /* ScannerDataViewModel.swift */,
+				C3D894C72AF81D8B005A3FA7 /* DataScannerView.swift */,
+				C3D894C92AF8209B005A3FA7 /* ScanView.swift */,
+			);
+			path = Scan;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -271,6 +290,9 @@
 			dependencies = (
 			);
 			name = Newlife;
+			packageProductDependencies = (
+				C36CEC432AF81AD6000CE30D /* CodeScanner */,
+			);
 			productName = Newlife;
 			productReference = C38C40892AF3A10A00652E39 /* Newlife.app */;
 			productType = "com.apple.product-type.application";
@@ -343,6 +365,9 @@
 				Base,
 			);
 			mainGroup = C38C40802AF3A10A00652E39;
+			packageReferences = (
+				C36CEC422AF81AD6000CE30D /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
 			productRefGroup = C38C408A2AF3A10A00652E39 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -387,9 +412,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3FBFCAC2AF5607100A907D3 /* NewsModel.swift in Sources */,
-				C372F3972AF50FEE0094450E /* ScanView.swift in Sources */,
+				C3D894C62AF81D26005A3FA7 /* ScannerDataViewModel.swift in Sources */,
+				C372F3972AF50FEE0094450E /* ViewInsideScanView.swift in Sources */,
 				C36CEC412AF81728000CE30D /* LicenseView.swift in Sources */,
 				C372F3A42AF529DA0094450E /* TabShape.swift in Sources */,
+				C3D894CA2AF8209B005A3FA7 /* ScanView.swift in Sources */,
 				C36CEC3C2AF811D7000CE30D /* TermsAndConditionsView.swift in Sources */,
 				C372F3912AF50DA30094450E /* NewsItem.swift in Sources */,
 				C3FBFCAA2AF5459000A907D3 /* NewsListView.swift in Sources */,
@@ -398,6 +425,7 @@
 				C372F39B2AF510020094450E /* SettingsView.swift in Sources */,
 				C38C408F2AF3A10A00652E39 /* NewsView.swift in Sources */,
 				C372F3952AF50FE10094450E /* HomeView.swift in Sources */,
+				C3D894C82AF81D8B005A3FA7 /* DataScannerView.swift in Sources */,
 				C372F3A62AF529EE0094450E /* TabPosition.swift in Sources */,
 				C36CEC3A2AF803B1000CE30D /* PrivacyPolicyView.swift in Sources */,
 				C372F39F2AF529740094450E /* Tab.swift in Sources */,
@@ -744,6 +772,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C36CEC422AF81AD6000CE30D /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C36CEC432AF81AD6000CE30D /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C36CEC422AF81AD6000CE30D /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C38C40812AF3A10A00652E39 /* Project object */;
 }
