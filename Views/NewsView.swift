@@ -9,6 +9,10 @@ import SwiftUI
 
 struct NewsView: View {
     
+    init() {
+        UIBarButtonItem.appearance(whenContainedInInstancesOf:[UISearchBar.self]).title = "Annulla"
+    }
+    
     var body: some View {
         
         @State var searchText = ""
@@ -17,9 +21,7 @@ struct NewsView: View {
             ZStack {
                 Color("whiteBackground").ignoresSafeArea()
                     VStack {
-                        ForEach(0..<10) { _ in
                             NewsListView()
-                        }
                     }
             }
             .navigationBarTitle("News", displayMode: .automatic)

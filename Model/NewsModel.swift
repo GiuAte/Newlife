@@ -12,7 +12,7 @@ class NewsModel: ObservableObject {
 
     func fetchDataFromAPI() {
         let apiKey = "2716ef1404964bfabf6993c15eec2c87"
-        let searchTerm = "apple"
+        let searchTerm = "riciclo"
         let fromDate = "2023-11-03"
         let language = "it"
         let sortBy = "popularity"
