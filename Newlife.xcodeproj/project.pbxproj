@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		C3366C382AF6F80E007CF373 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3366C372AF6F80E007CF373 /* SettingsViewModel.swift */; };
+		C36CEC3A2AF803B1000CE30D /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36CEC392AF803B1000CE30D /* PrivacyPolicyView.swift */; };
+		C36CEC3C2AF811D7000CE30D /* TermsAndConditionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36CEC3B2AF811D7000CE30D /* TermsAndConditionsView.swift */; };
+		C36CEC3F2AF81424000CE30D /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36CEC3E2AF81424000CE30D /* BackButton.swift */; };
+		C36CEC412AF81728000CE30D /* LicenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36CEC402AF81728000CE30D /* LicenseView.swift */; };
 		C372F3912AF50DA30094450E /* NewsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372F3902AF50DA30094450E /* NewsItem.swift */; };
 		C372F3952AF50FE10094450E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372F3942AF50FE10094450E /* HomeView.swift */; };
 		C372F3972AF50FEE0094450E /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372F3962AF50FEE0094450E /* ScanView.swift */; };
@@ -49,6 +53,10 @@
 
 /* Begin PBXFileReference section */
 		C3366C372AF6F80E007CF373 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		C36CEC392AF803B1000CE30D /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
+		C36CEC3B2AF811D7000CE30D /* TermsAndConditionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsView.swift; sourceTree = "<group>"; };
+		C36CEC3E2AF81424000CE30D /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		C36CEC402AF81728000CE30D /* LicenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseView.swift; sourceTree = "<group>"; };
 		C372F3902AF50DA30094450E /* NewsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItem.swift; sourceTree = "<group>"; };
 		C372F3942AF50FE10094450E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C372F3962AF50FEE0094450E /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
@@ -115,6 +123,25 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		C36CEC382AF8039B000CE30D /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C372F39A2AF510020094450E /* SettingsView.swift */,
+				C36CEC392AF803B1000CE30D /* PrivacyPolicyView.swift */,
+				C36CEC3B2AF811D7000CE30D /* TermsAndConditionsView.swift */,
+				C36CEC402AF81728000CE30D /* LicenseView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		C36CEC3D2AF81418000CE30D /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				C36CEC3E2AF81424000CE30D /* BackButton.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
 		C372F38C2AF5039E0094450E /* UIItems */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,7 +166,7 @@
 			children = (
 				C372F3982AF50FF90094450E /* ContactsView.swift */,
 				C38C408E2AF3A10A00652E39 /* NewsView.swift */,
-				C372F39A2AF510020094450E /* SettingsView.swift */,
+				C36CEC382AF8039B000CE30D /* Settings */,
 				C372F3962AF50FEE0094450E /* ScanView.swift */,
 				C372F3942AF50FE10094450E /* HomeView.swift */,
 				C372F3A72AF5352E0094450E /* ContentView.swift */,
@@ -169,6 +196,7 @@
 		C38C40802AF3A10A00652E39 = {
 			isa = PBXGroup;
 			children = (
+				C36CEC3D2AF81418000CE30D /* Support */,
 				C3366C362AF6ED2D007CF373 /* App */,
 				C3366C352AF6E953007CF373 /* ViewModels */,
 				C372F39D2AF529460094450E /* Model */,
@@ -360,7 +388,9 @@
 			files = (
 				C3FBFCAC2AF5607100A907D3 /* NewsModel.swift in Sources */,
 				C372F3972AF50FEE0094450E /* ScanView.swift in Sources */,
+				C36CEC412AF81728000CE30D /* LicenseView.swift in Sources */,
 				C372F3A42AF529DA0094450E /* TabShape.swift in Sources */,
+				C36CEC3C2AF811D7000CE30D /* TermsAndConditionsView.swift in Sources */,
 				C372F3912AF50DA30094450E /* NewsItem.swift in Sources */,
 				C3FBFCAA2AF5459000A907D3 /* NewsListView.swift in Sources */,
 				C3366C382AF6F80E007CF373 /* SettingsViewModel.swift in Sources */,
@@ -369,7 +399,9 @@
 				C38C408F2AF3A10A00652E39 /* NewsView.swift in Sources */,
 				C372F3952AF50FE10094450E /* HomeView.swift in Sources */,
 				C372F3A62AF529EE0094450E /* TabPosition.swift in Sources */,
+				C36CEC3A2AF803B1000CE30D /* PrivacyPolicyView.swift in Sources */,
 				C372F39F2AF529740094450E /* Tab.swift in Sources */,
+				C36CEC3F2AF81424000CE30D /* BackButton.swift in Sources */,
 				C372F3A82AF5352E0094450E /* ContentView.swift in Sources */,
 				C38C408D2AF3A10A00652E39 /* NewlifeApp.swift in Sources */,
 				C372F3992AF50FF90094450E /* ContactsView.swift in Sources */,
@@ -547,6 +579,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -580,6 +613,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

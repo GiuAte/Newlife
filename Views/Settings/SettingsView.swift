@@ -14,6 +14,7 @@ struct SettingsView: View {
     @AppStorage("isDarkModeEnabled") private var isDarkModeEnabled = false
     @State private var isMailViewPresented = false
     
+    
     var body: some View {
         
         NavigationView {
@@ -21,35 +22,21 @@ struct SettingsView: View {
                 List {
                     // MARK: - SUPPORTO
                     Section(header: Text("Supporto")) {
-                        NavigationLink(destination: Text("Aiuto")) {
+                        NavigationLink(destination: LicenseView()) {
                             Image(systemName: "questionmark.circle")
-                            Text("Aiuto")
+                            Text("Contratto di Licenza")
                         }
                         
-                        NavigationLink(destination: Text("Linee Guida")) {
+                        NavigationLink(destination: TermsAndConditionsView()) {
                             Image(systemName: "shield")
-                            Text("Linee Guida")
+                            Text("Termini e Condizioni")
                         }
                         
-                        NavigationLink(destination: Text("Politica sulla privacy")) {
+                        NavigationLink(destination: PrivacyPolicyView()) {
                             Image(systemName: "hand.raised")
-                            Text("Politica sulla privacy")
+                            Text("Politica sulla Privacy")
                         }
                         
-                        
-                        Button(action: {
-                            isMailViewPresented.toggle()
-                        }) {
-                            HStack {
-                                Image(systemName: "envelope.open")
-                                    .foregroundColor(Color.primary)
-                                Text("Contattami")
-                                    .accentColor(Color.primary)
-                            }
-                        }
-                        .sheet(isPresented: $isMailViewPresented) {
-                            MailComposeView(emailAddress: "giulioaternodev@gmail.com")
-                        }
                     }
                     
                     // MARK: - IMPOSTAZIONI
@@ -94,6 +81,21 @@ struct SettingsView: View {
                                     .foregroundStyle(Color.primary)
                             }
                         }
+                        
+                        Button(action: {
+                            isMailViewPresented.toggle()
+                        }) {
+                            HStack {
+                                Image(systemName: "envelope.open")
+                                    .foregroundColor(Color.primary)
+                                Text("Contattami")
+                                    .accentColor(Color.primary)
+                            }
+                        }
+                        .sheet(isPresented: $isMailViewPresented) {
+                            MailComposeView(emailAddress: "giulioaternodev@gmail.com")
+                        }
+                        
                     }
                     
                     // MARK: - FOOTER
@@ -115,74 +117,6 @@ struct SettingsView: View {
                 .scrollContentBackground(.hidden)
                 .listStyle(GroupedListStyle())
                 .navigationTitle("Impostazioni")
-            }
-        }
-    }
-    
-    func shareApp() {
-        let text = "Inizia a riciclare i tuoi oggetti! Scarica Newlife"
-        if let url = URL(string: "https://www.yourappstorelink.com") {
-            let activityViewController = UIActivityViewController(
-                activityItems: [text, url],
-                applicationActivities: nil
-            )
-            
-            if let viewController = UIApplication.shared.windows.first?.rootViewController {
-                viewController.present(activityViewController, animated: true, completion: nil)
-            }
-        }
-    }
-
-    func requestAppReview() {
-        if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
-            SKStoreReviewController.requestReview(in: scene)
-        }
-    }
-
-    struct CustomToggleStyle: ToggleStyle {
-        @Binding var isOn: Bool
-        
-        func makeBody(configuration: Self.Configuration) -> some View {
-            HStack {
-                Image(systemName: isOn ? "moon.fill" : "moon")
-                    .resizable()
-                    .frame(width: 20, height: 20)
-                Text("Modalità scura")
-                Spacer()
-                Toggle("", isOn: $isOn)
-                    .labelsHidden()
-            }
-        }
-    }
-    
-    // MARK: - STRUCT
-    
-    struct MailComposeView: UIViewControllerRepresentable {
-        let emailAddress: String
-        
-        func makeUIViewController(context: Context) -> MFMailComposeViewController {
-            let viewController = MFMailComposeViewController()
-            viewController.setToRecipients([emailAddress])
-            viewController.setSubject("Contattami")
-            viewController.mailComposeDelegate = context.coordinator
-            return viewController
-        }
-        
-        func updateUIViewController(_ uiViewController: MFMailComposeViewController, context: Context) {}
-        
-        func makeCoordinator() -> Coordinator {
-            Coordinator(self)
-        }
-        
-        class Coordinator: NSObject, MFMailComposeViewControllerDelegate {
-            var parent: MailComposeView
-            
-            init(_ parent: MailComposeView) {
-                self.parent = parent
-            }
-            
-            func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
-                controller.dismiss(animated: true)
             }
         }
     }
