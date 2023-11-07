@@ -20,7 +20,6 @@ struct TabBarView: View {
     }
     
     var body: some View {
-        NavigationView {
             VStack {
                 TabView(selection: $activeTab) {
                     NewsView()
@@ -35,10 +34,12 @@ struct TabBarView: View {
                         .tag(Tab.settings)
                     
                 }
-                CustomTabBar()
+                .overlay(
+                    CustomTabBar()
+                        .padding(.bottom, 40)
+                        .offset(y: UIScreen.main.bounds.height / 2 - 60)
+                )
             }
-            .background(Color("whiteBackground"))
-        }
     }
     
     @ViewBuilder

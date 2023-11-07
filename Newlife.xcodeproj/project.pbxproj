@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C3366C382AF6F80E007CF373 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3366C372AF6F80E007CF373 /* SettingsViewModel.swift */; };
+		C343176B2AF9BD45007B59A8 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C343176A2AF9BD45007B59A8 /* LocationManager.swift */; };
 		C36CEC3A2AF803B1000CE30D /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36CEC392AF803B1000CE30D /* PrivacyPolicyView.swift */; };
 		C36CEC3C2AF811D7000CE30D /* TermsAndConditionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36CEC3B2AF811D7000CE30D /* TermsAndConditionsView.swift */; };
 		C36CEC3F2AF81424000CE30D /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36CEC3E2AF81424000CE30D /* BackButton.swift */; };
@@ -57,6 +58,7 @@
 
 /* Begin PBXFileReference section */
 		C3366C372AF6F80E007CF373 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		C343176A2AF9BD45007B59A8 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		C36CEC392AF803B1000CE30D /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
 		C36CEC3B2AF811D7000CE30D /* TermsAndConditionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsView.swift; sourceTree = "<group>"; };
 		C36CEC3E2AF81424000CE30D /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
@@ -131,6 +133,15 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		C34317692AF9BD2F007B59A8 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				C372F3982AF50FF90094450E /* ContactsView.swift */,
+				C343176A2AF9BD45007B59A8 /* LocationManager.swift */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
 		C36CEC382AF8039B000CE30D /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,7 +183,7 @@
 		C372F39C2AF5100D0094450E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C372F3982AF50FF90094450E /* ContactsView.swift */,
+				C34317692AF9BD2F007B59A8 /* Contacts */,
 				C38C408E2AF3A10A00652E39 /* NewsView.swift */,
 				C36CEC382AF8039B000CE30D /* Settings */,
 				C3D894C42AF81D06005A3FA7 /* Scan */,
@@ -418,6 +429,7 @@
 				C372F3A42AF529DA0094450E /* TabShape.swift in Sources */,
 				C3D894CA2AF8209B005A3FA7 /* ScanView.swift in Sources */,
 				C36CEC3C2AF811D7000CE30D /* TermsAndConditionsView.swift in Sources */,
+				C343176B2AF9BD45007B59A8 /* LocationManager.swift in Sources */,
 				C372F3912AF50DA30094450E /* NewsItem.swift in Sources */,
 				C3FBFCAA2AF5459000A907D3 /* NewsListView.swift in Sources */,
 				C3366C382AF6F80E007CF373 /* SettingsViewModel.swift in Sources */,
