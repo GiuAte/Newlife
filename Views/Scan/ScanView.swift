@@ -34,16 +34,6 @@ struct ScanView: View {
                         .frame(width: 350, height: 350, alignment: .center)
                     
                     Spacer()
-                    
-                    Image(systemName: "barcode.viewfinder")
-                        .font(.largeTitle)
-                        .foregroundColor(.gray)
-                    
-                    
-                    Text("Tocca l'icona per eseguire una nuova scansione")
-                        .font(.callout)
-                        .foregroundColor(Color.primary)
-                    
                     Spacer(minLength: 45)
                     
                 }

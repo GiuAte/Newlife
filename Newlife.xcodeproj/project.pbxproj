@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B8C87D820EDD1E795991C7F /* Pods_Newlife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93ABB08767E1DE20381C1D45 /* Pods_Newlife.framework */; };
+		C30263802AFA7A2E005437BB /* NewsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C302637F2AFA7A2E005437BB /* NewsDetailView.swift */; };
 		C3366C382AF6F80E007CF373 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3366C372AF6F80E007CF373 /* SettingsViewModel.swift */; };
 		C343176B2AF9BD45007B59A8 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C343176A2AF9BD45007B59A8 /* LocationManager.swift */; };
 		C36CEC3A2AF803B1000CE30D /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36CEC392AF803B1000CE30D /* PrivacyPolicyView.swift */; };
@@ -57,6 +59,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5503C9DEEE399FFEF04144F8 /* Pods-Newlife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Newlife.release.xcconfig"; path = "Target Support Files/Pods-Newlife/Pods-Newlife.release.xcconfig"; sourceTree = "<group>"; };
+		93ABB08767E1DE20381C1D45 /* Pods_Newlife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Newlife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7C3A8BA9C663DB32A413388 /* Pods-Newlife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Newlife.debug.xcconfig"; path = "Target Support Files/Pods-Newlife/Pods-Newlife.debug.xcconfig"; sourceTree = "<group>"; };
+		C302637F2AFA7A2E005437BB /* NewsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailView.swift; sourceTree = "<group>"; };
 		C3366C372AF6F80E007CF373 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		C343176A2AF9BD45007B59A8 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		C36CEC392AF803B1000CE30D /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
@@ -98,6 +104,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C36CEC442AF81AD6000CE30D /* CodeScanner in Frameworks */,
+				6B8C87D820EDD1E795991C7F /* Pods_Newlife.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +125,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E938FF5FB4F492E5C98A464 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7C3A8BA9C663DB32A413388 /* Pods-Newlife.debug.xcconfig */,
+				5503C9DEEE399FFEF04144F8 /* Pods-Newlife.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8BD5907CB85ECAB662011A43 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93ABB08767E1DE20381C1D45 /* Pods_Newlife.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C302637E2AFA7A19005437BB /* News */ = {
+			isa = PBXGroup;
+			children = (
+				C38C408E2AF3A10A00652E39 /* NewsView.swift */,
+				C302637F2AFA7A2E005437BB /* NewsDetailView.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
 		C3366C352AF6E953007CF373 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,7 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				C34317692AF9BD2F007B59A8 /* Contacts */,
-				C38C408E2AF3A10A00652E39 /* NewsView.swift */,
+				C302637E2AFA7A19005437BB /* News */,
 				C36CEC382AF8039B000CE30D /* Settings */,
 				C3D894C42AF81D06005A3FA7 /* Scan */,
 				C372F3942AF50FE10094450E /* HomeView.swift */,
@@ -225,6 +258,8 @@
 				C38C409C2AF3A10D00652E39 /* NewlifeTests */,
 				C38C40A62AF3A10D00652E39 /* NewlifeUITests */,
 				C38C408A2AF3A10A00652E39 /* Products */,
+				5E938FF5FB4F492E5C98A464 /* Pods */,
+				8BD5907CB85ECAB662011A43 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -292,9 +327,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C38C40AD2AF3A10D00652E39 /* Build configuration list for PBXNativeTarget "Newlife" */;
 			buildPhases = (
+				EFF9428A74CEFD2D32BA1B59 /* [CP] Check Pods Manifest.lock */,
 				C38C40852AF3A10A00652E39 /* Sources */,
 				C38C40862AF3A10A00652E39 /* Frameworks */,
 				C38C40872AF3A10A00652E39 /* Resources */,
+				4EB981E4B498A22CFA5AB1DF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -417,6 +454,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4EB981E4B498A22CFA5AB1DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Newlife/Pods-Newlife-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Newlife/Pods-Newlife-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Newlife/Pods-Newlife-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFF9428A74CEFD2D32BA1B59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Newlife-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C38C40852AF3A10A00652E39 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -432,6 +511,7 @@
 				C343176B2AF9BD45007B59A8 /* LocationManager.swift in Sources */,
 				C372F3912AF50DA30094450E /* NewsItem.swift in Sources */,
 				C3FBFCAA2AF5459000A907D3 /* NewsListView.swift in Sources */,
+				C30263802AFA7A2E005437BB /* NewsDetailView.swift in Sources */,
 				C3366C382AF6F80E007CF373 /* SettingsViewModel.swift in Sources */,
 				C372F3A22AF529C00094450E /* TabBarView.swift in Sources */,
 				C372F39B2AF510020094450E /* SettingsView.swift in Sources */,
@@ -602,6 +682,7 @@
 		};
 		C38C40AE2AF3A10D00652E39 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7C3A8BA9C663DB32A413388 /* Pods-Newlife.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -610,6 +691,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Newlife/Preview Content\"";
 				DEVELOPMENT_TEAM = Z3264CP7F3;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Newlife/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Newlife;
@@ -636,6 +718,7 @@
 		};
 		C38C40AF2AF3A10D00652E39 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5503C9DEEE399FFEF04144F8 /* Pods-Newlife.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -644,6 +727,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Newlife/Preview Content\"";
 				DEVELOPMENT_TEAM = Z3264CP7F3;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Newlife/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Newlife;
