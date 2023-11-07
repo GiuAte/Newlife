@@ -19,7 +19,7 @@
 		C372F3912AF50DA30094450E /* NewsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372F3902AF50DA30094450E /* NewsItem.swift */; };
 		C372F3952AF50FE10094450E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372F3942AF50FE10094450E /* HomeView.swift */; };
 		C372F3972AF50FEE0094450E /* ViewInsideScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372F3962AF50FEE0094450E /* ViewInsideScanView.swift */; };
-		C372F3992AF50FF90094450E /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372F3982AF50FF90094450E /* ContactsView.swift */; };
+		C372F3992AF50FF90094450E /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372F3982AF50FF90094450E /* MapView.swift */; };
 		C372F39B2AF510020094450E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372F39A2AF510020094450E /* SettingsView.swift */; };
 		C372F39F2AF529740094450E /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372F39E2AF529740094450E /* Tab.swift */; };
 		C372F3A22AF529C00094450E /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372F3A12AF529C00094450E /* TabBarView.swift */; };
@@ -72,7 +72,7 @@
 		C372F3902AF50DA30094450E /* NewsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItem.swift; sourceTree = "<group>"; };
 		C372F3942AF50FE10094450E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C372F3962AF50FEE0094450E /* ViewInsideScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInsideScanView.swift; sourceTree = "<group>"; };
-		C372F3982AF50FF90094450E /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		C372F3982AF50FF90094450E /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		C372F39A2AF510020094450E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		C372F39E2AF529740094450E /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		C372F3A12AF529C00094450E /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
@@ -166,13 +166,13 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		C34317692AF9BD2F007B59A8 /* Contacts */ = {
+		C34317692AF9BD2F007B59A8 /* Map */ = {
 			isa = PBXGroup;
 			children = (
-				C372F3982AF50FF90094450E /* ContactsView.swift */,
+				C372F3982AF50FF90094450E /* MapView.swift */,
 				C343176A2AF9BD45007B59A8 /* LocationManager.swift */,
 			);
-			path = Contacts;
+			path = Map;
 			sourceTree = "<group>";
 		};
 		C36CEC382AF8039B000CE30D /* Settings */ = {
@@ -216,11 +216,11 @@
 		C372F39C2AF5100D0094450E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C34317692AF9BD2F007B59A8 /* Contacts */,
+				C34317692AF9BD2F007B59A8 /* Map */,
 				C302637E2AFA7A19005437BB /* News */,
 				C36CEC382AF8039B000CE30D /* Settings */,
 				C3D894C42AF81D06005A3FA7 /* Scan */,
-				C372F3942AF50FE10094450E /* HomeView.swift */,
+				C3AB94DC2AFABD2B002A4CC5 /* Home */,
 				C372F3A72AF5352E0094450E /* ContentView.swift */,
 			);
 			path = Views;
@@ -307,6 +307,14 @@
 				C38C40A92AF3A10D00652E39 /* NewlifeUITestsLaunchTests.swift */,
 			);
 			path = NewlifeUITests;
+			sourceTree = "<group>";
+		};
+		C3AB94DC2AFABD2B002A4CC5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C372F3942AF50FE10094450E /* HomeView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		C3D894C42AF81D06005A3FA7 /* Scan */ = {
@@ -524,7 +532,7 @@
 				C36CEC3F2AF81424000CE30D /* BackButton.swift in Sources */,
 				C372F3A82AF5352E0094450E /* ContentView.swift in Sources */,
 				C38C408D2AF3A10A00652E39 /* NewlifeApp.swift in Sources */,
-				C372F3992AF50FF90094450E /* ContactsView.swift in Sources */,
+				C372F3992AF50FF90094450E /* MapView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,7 +10,7 @@ import MapKit
 import CoreLocation
 import UIKit
 
-struct ContactsView: View {
+struct MapView: View {
     
     @State private var userLocation: CLLocationCoordinate2D?
     @State private var selectedLocation: Location?
@@ -24,66 +24,68 @@ struct ContactsView: View {
     @State private var selectedLocationIndex: Int?
     
     @State private var locations: [Location] = [
-        Location(name: "Centro Raccolta Basile", address: "Via Ernesto Basile - Palermo", coordinate: CLLocationCoordinate2D(latitude: 38.1042, longitude: 13.3522), time: "Lun/Sat 07:00 - 13:00 ● Merc 07:00 - 17:00"),
+        Location(name: "Centro Raccolta Basile", address: "Via Ernesto Basile - Palermo", coordinate: CLLocationCoordinate2D(latitude: 38.1042, longitude: 13.3522), time: "Lun/Sat 07:00 - 13:00  Merc 07:00 - 17:00"),
         
-        Location(name: "Centro Raccolta Lennon", address: "Via Antonio de Saliba, 6 - Palermo", coordinate: CLLocationCoordinate2D(latitude: 38.1278, longitude: 13.3332), time: "Lun/Sat 07 - 17:00 ● Dom 07:00 - 12:00"),
+        Location(name: "Centro Raccolta Lennon", address: "Via Antonio de Saliba, 6 - Palermo", coordinate: CLLocationCoordinate2D(latitude: 38.1278, longitude: 13.3332), time: "Lun/Sat 07 - 17:00  Dom 07:00 - 12:00"),
         
         Location(name: "Centro Raccolta Minutilla – La Malfa", address: "Via Salvatore Minutilla, 90146 - Palermo", coordinate: CLLocationCoordinate2D(latitude: 38.1614, longitude: 13.3006), time: "Lun/Sat 07:00 - 13:00"),
         
         Location(name: "Centro Raccolta Rotonda Oreto", address: "Viale Regione Siciliana, 90124 - Palermo", coordinate: CLLocationCoordinate2D(latitude: 38.0897, longitude: 13.3703), time: "Lun/Sat 07:00 - 17:00"),
         
-        Location(name: "Centro Raccolta Nicoletti", address: "Via Rosario Nicoletti, 73 - Palermo", coordinate: CLLocationCoordinate2D(latitude: 38.1924, longitude: 13.2832), time: "Lun/Sat 07:00 - 17:00 ● Dom 07:00 - 12:00"),
+        Location(name: "Centro Raccolta Nicoletti", address: "Via Rosario Nicoletti, 73 - Palermo", coordinate: CLLocationCoordinate2D(latitude: 38.1924, longitude: 13.2832), time: "Lun/Sat 07:00 - 17:00 Dom 07:00 - 12:00"),
         
-        Location(name: "Centro Raccolta Pace", address: "Piazza della Pace, 90139 - Palermo", coordinate: CLLocationCoordinate2D(latitude: 38.1333, longitude: 13.3572), time: "Lun/Sat 07:00 - 13:00 ● Mar e Gio 07:00 - 17:00"),
+        Location(name: "Centro Raccolta Pace", address: "Piazza della Pace, 90139 - Palermo", coordinate: CLLocationCoordinate2D(latitude: 38.1333, longitude: 13.3572), time: "Lun/Sat 07:00 - 13:00 Mar e Gio 07:00 - 17:00"),
         
-        Location(name: "Centro Raccolta Picciotti", address: "Viale dei Picciotti, 84, 90123 - Palermo", coordinate: CLLocationCoordinate2D(latitude: 38.0971, longitude: 13.3846), time: "Lun/Sat 07:00 - 17:00 ● Dom 07:00 - 12:00")
+        Location(name: "Centro Raccolta Picciotti", address: "Viale dei Picciotti, 84, 90123 - Palermo", coordinate: CLLocationCoordinate2D(latitude: 38.0971, longitude: 13.3846), time: "Lun/Sat 07:00 - 17:00 Dom 07:00 - 12:00")
         
     ]
     
     var body: some View {
-            ZStack {
-                Color.whiteBackground.ignoresSafeArea()
-                    Map(
-                        coordinateRegion: $manager.region,
-                        interactionModes: MapInteractionModes.all,
-                        showsUserLocation: true
-                    )
-                    .ignoresSafeArea()
-                    .onAppear {
-                        addMarkers()
-                        isSheetPresented = true
-                    }
-                    .sheet(isPresented: $isSheetPresented, content: {
-                        bottomContainerView
-                            .background(.ultraThinMaterial)
-                            .presentationDetents([.medium, .fraction(0.25)])
-                            .presentationDragIndicator(.visible)
-                    })
-                }
+        ZStack {
+            Color.whiteBackground.ignoresSafeArea()
+            Map(
+                coordinateRegion: $manager.region,
+                //interactionModes: MapInteractionModes.all,
+                showsUserLocation: true
+            )
+            .ignoresSafeArea()
+            .onAppear {
+                addMarkers()
+                isSheetPresented = true
+            }
+            VStack {
+                Spacer()
+                bottomContainerView
+                    .presentationDetents([.medium, .fraction(0.25)])
+                    .presentationDragIndicator(.visible)
+                    .frame(maxWidth: .infinity)
+            }
         }
-
-        private func openDirections(for location: Location) {
+    }
+    
+    private func openDirections(for location: Location) {
+        if let coordinate = location.coordinate {
+            let placemark = MKPlacemark(coordinate: coordinate)
+            let mapItem = MKMapItem(placemark: placemark)
+            mapItem.name = location.name
+            mapItem.openInMaps()
+        }
+    }
+    
+    private func addMarkers() {
+        for location in locations {
             if let coordinate = location.coordinate {
-                let placemark = MKPlacemark(coordinate: coordinate)
-                let mapItem = MKMapItem(placemark: placemark)
-                mapItem.name = location.name
-                mapItem.openInMaps()
+                let marker = MKPointAnnotation()
+                marker.coordinate = coordinate
+                marker.title = location.name
+                marker.subtitle = location.address
+                //manager.addAnnotation(marker)
             }
         }
-
-        private func addMarkers() {
-            for location in locations {
-                if let coordinate = location.coordinate {
-                    let marker = MKPointAnnotation()
-                    marker.coordinate = coordinate
-                    marker.title = location.name
-                    marker.subtitle = location.address
-                    //manager.addAnnotation(marker)
-                }
-            }
-        }
-
-        private var bottomContainerView: some View {
+    }
+    
+    private var bottomContainerView: some View {
+        VStack {
             List {
                 ForEach(0..<locations.count, id: \.self) { index in
                     let location = locations[index]
@@ -115,15 +117,17 @@ struct ContactsView: View {
                             Spacer()
                         }
                         .frame(width: 190, height: 40)
-                        .background(RoundedRectangle(cornerRadius: 10).fill(Color.blue))
+                        .background(RoundedRectangle(cornerRadius: 10).fill(Color("Green")))
                     }
                 }
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                
             }
+            .frame(maxWidth: .infinity, maxHeight: 350)
             .scrollContentBackground(.hidden)
             .scrollIndicators(.never)
         }
     }
+}
 
 
 struct Location: Identifiable {
@@ -143,6 +147,6 @@ struct Location: Identifiable {
 
 
 #Preview {
-    ContactsView()
+    MapView()
 }
 

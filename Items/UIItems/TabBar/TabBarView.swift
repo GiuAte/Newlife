@@ -28,8 +28,8 @@ struct TabBarView: View {
                         .tag(Tab.scan)
                     HomeView()
                         .tag(Tab.home)
-                    ContactsView()
-                        .tag(Tab.contacts)
+                    MapView()
+                        .tag(Tab.map)
                     SettingsView()
                         .tag(Tab.settings)
                     

@@ -13,7 +13,7 @@ enum Tab: String, CaseIterable {
     case news = "News"
     case scan = "Scan"
     case home = "Home"
-    case contacts = "Contatti"
+    case map = "Mappa"
     case settings = "Impostazioni"
     
     var systemImage: String {
@@ -24,8 +24,8 @@ enum Tab: String, CaseIterable {
             return "newspaper"
         case .home:
             return "house"
-        case .contacts:
-            return "phone"
+        case .map:
+            return "map"
         case .settings:
             return "gearshape"
         }

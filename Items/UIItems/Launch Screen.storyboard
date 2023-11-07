@@ -34,7 +34,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
-                        <color key="backgroundColor" name="launchscreenColor"/>
+                        <color key="backgroundColor" name="majorTextColor"/>
                         <constraints>
                             <constraint firstItem="crX-sO-RLj" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="104" id="1Mb-w0-GYM"/>
                             <constraint firstItem="otM-bW-IvH" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Ag0-Ji-7BA"/>
@@ -57,8 +57,8 @@
         <namedColor name="darkGreen">
             <color red="0.125" green="0.2630000114440918" blue="0.17599999904632568" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="launchscreenColor">
-            <color red="0.60799998044967651" green="0.85900002717971802" blue="0.75300002098083496" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="majorTextColor">
+            <color red="0.15700000524520874" green="0.70599997043609619" blue="0.27500000596046448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
