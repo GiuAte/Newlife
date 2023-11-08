@@ -10,14 +10,48 @@ import UserNotifications
 
 struct ContentView: View {
     @State private var selectedTab: Tab? = .home
+    @State private var isOnboardingCompleted = UserDefaults.standard.bool(forKey: "isOnboardingCompleted")
     
     init() {
-        checkForPermission()
         dispatchNotification()
+        checkForPermission()
     }
     
     var body: some View {
-        TabBarView()
+        NavigationStack {
+            if !isOnboardingCompleted {
+                OnBoardingScreen(isOnboardingCompleted: $isOnboardingCompleted)
+            } else {
+                TabBarView()
+            }
+        }
+    }
+        
+    func dispatchNotification() {
+        let identifier = "my-afternoon-notification"
+        let title = "TestPerApp"
+        let body = "ProvaPippoPluto"
+        let hour = 18
+        let minute = 00
+        let isDaily = true
+        
+        let notificationCenter = UNUserNotificationCenter.current()
+        
+        let content = UNMutableNotificationContent()
+        content.title = title
+        content.body = body
+        content .sound = .default
+        
+        let calendar = Calendar.current
+        var dateComponents = DateComponents(calendar: calendar, timeZone: TimeZone.current)
+        dateComponents.hour = hour
+        dateComponents.minute = minute
+        
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: isDaily)
+        let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
+        
+        notificationCenter.removePendingNotificationRequests(withIdentifiers: [identifier])
+        notificationCenter.add(request)
     }
     
     func checkForPermission() {
@@ -39,34 +73,6 @@ struct ContentView: View {
                 return
             }
         }
-    }
-    
-    
-    func dispatchNotification() {
-        let identifier = "my-afternoon-notification"
-        let title = "Prepara i rifiuti!"
-        let body = "Scopri cosa smaltire oggi"
-        let hour = 17
-        let minute = 30
-        let isDaily = true
-        
-        let notificationCenter = UNUserNotificationCenter.current()
-        
-        let content = UNMutableNotificationContent()
-        content.title = title
-        content.body = body
-        content .sound = .default
-        
-        let calendar = Calendar.current
-        var dateComponents = DateComponents(calendar: calendar, timeZone: TimeZone.current)
-        dateComponents.hour = hour
-        dateComponents.minute = minute
-        
-        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: isDaily)
-        let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
-        
-        notificationCenter.removePendingNotificationRequests(withIdentifiers: [identifier])
-        notificationCenter.add(request)
     }
 }
 

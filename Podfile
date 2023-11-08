@@ -5,5 +5,4 @@ source 'https://github.com/CocoaPods/Specs.git'
 target 'Newlife' do
  pod 'Alamofire'
 pod 'SwiftSoup'
-
 end

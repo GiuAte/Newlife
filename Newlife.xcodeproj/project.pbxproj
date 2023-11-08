@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		6B8C87D820EDD1E795991C7F /* Pods_Newlife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93ABB08767E1DE20381C1D45 /* Pods_Newlife.framework */; };
 		C30263802AFA7A2E005437BB /* NewsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C302637F2AFA7A2E005437BB /* NewsDetailView.swift */; };
+		C30466282AFBE1D600A38AB4 /* handPlant.json in Resources */ = {isa = PBXBuildFile; fileRef = C30466272AFBE1D600A38AB4 /* handPlant.json */; };
+		C304662A2AFBE2DD00A38AB4 /* scanBarcode.json in Resources */ = {isa = PBXBuildFile; fileRef = C30466292AFBE2DD00A38AB4 /* scanBarcode.json */; };
+		C304662C2AFBE35E00A38AB4 /* plantGrowing.json in Resources */ = {isa = PBXBuildFile; fileRef = C304662B2AFBE35E00A38AB4 /* plantGrowing.json */; };
 		C3366C382AF6F80E007CF373 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3366C372AF6F80E007CF373 /* SettingsViewModel.swift */; };
 		C343176B2AF9BD45007B59A8 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C343176A2AF9BD45007B59A8 /* LocationManager.swift */; };
 		C36CEC3A2AF803B1000CE30D /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36CEC392AF803B1000CE30D /* PrivacyPolicyView.swift */; };
@@ -26,6 +29,9 @@
 		C372F3A42AF529DA0094450E /* TabShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372F3A32AF529DA0094450E /* TabShape.swift */; };
 		C372F3A62AF529EE0094450E /* TabPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372F3A52AF529EE0094450E /* TabPosition.swift */; };
 		C372F3A82AF5352E0094450E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372F3A72AF5352E0094450E /* ContentView.swift */; };
+		C37FB9FC2AFBC361009E7C77 /* ResizableLottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37FB9FA2AFBC361009E7C77 /* ResizableLottieView.swift */; };
+		C37FB9FD2AFBC361009E7C77 /* OnBoardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37FB9FB2AFBC361009E7C77 /* OnBoardingScreen.swift */; };
+		C37FBA042AFBC400009E7C77 /* OnBoardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37FBA032AFBC400009E7C77 /* OnBoardItem.swift */; };
 		C38C408D2AF3A10A00652E39 /* NewlifeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38C408C2AF3A10A00652E39 /* NewlifeApp.swift */; };
 		C38C408F2AF3A10A00652E39 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38C408E2AF3A10A00652E39 /* NewsView.swift */; };
 		C38C40912AF3A10C00652E39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C38C40902AF3A10C00652E39 /* Assets.xcassets */; };
@@ -34,6 +40,8 @@
 		C38C40A82AF3A10D00652E39 /* NewlifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38C40A72AF3A10D00652E39 /* NewlifeUITests.swift */; };
 		C38C40AA2AF3A10D00652E39 /* NewlifeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38C40A92AF3A10D00652E39 /* NewlifeUITestsLaunchTests.swift */; };
 		C38C40B82AF3B24200652E39 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C38C40B72AF3B24200652E39 /* Launch Screen.storyboard */; };
+		C3C3A7432AFBDBD500D2E41C /* greenBin.json in Resources */ = {isa = PBXBuildFile; fileRef = C3C3A7422AFBDBD500D2E41C /* greenBin.json */; };
+		C3C3A7452AFBE03A00D2E41C /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = C3C3A7442AFBE03A00D2E41C /* Lottie */; };
 		C3D894C62AF81D26005A3FA7 /* ScannerDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D894C52AF81D26005A3FA7 /* ScannerDataViewModel.swift */; };
 		C3D894C82AF81D8B005A3FA7 /* DataScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D894C72AF81D8B005A3FA7 /* DataScannerView.swift */; };
 		C3D894CA2AF8209B005A3FA7 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D894C92AF8209B005A3FA7 /* ScanView.swift */; };
@@ -63,6 +71,9 @@
 		93ABB08767E1DE20381C1D45 /* Pods_Newlife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Newlife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7C3A8BA9C663DB32A413388 /* Pods-Newlife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Newlife.debug.xcconfig"; path = "Target Support Files/Pods-Newlife/Pods-Newlife.debug.xcconfig"; sourceTree = "<group>"; };
 		C302637F2AFA7A2E005437BB /* NewsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailView.swift; sourceTree = "<group>"; };
+		C30466272AFBE1D600A38AB4 /* handPlant.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = handPlant.json; sourceTree = "<group>"; };
+		C30466292AFBE2DD00A38AB4 /* scanBarcode.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = scanBarcode.json; sourceTree = "<group>"; };
+		C304662B2AFBE35E00A38AB4 /* plantGrowing.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = plantGrowing.json; sourceTree = "<group>"; };
 		C3366C372AF6F80E007CF373 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		C343176A2AF9BD45007B59A8 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		C36CEC392AF803B1000CE30D /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
@@ -80,6 +91,9 @@
 		C372F3A52AF529EE0094450E /* TabPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPosition.swift; sourceTree = "<group>"; };
 		C372F3A72AF5352E0094450E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C378C3002AFBAEB400940851 /* Newlife.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Newlife.entitlements; sourceTree = "<group>"; };
+		C37FB9FA2AFBC361009E7C77 /* ResizableLottieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResizableLottieView.swift; path = "../../../../OnBoardScreen copia/ResizableLottieView.swift"; sourceTree = "<group>"; };
+		C37FB9FB2AFBC361009E7C77 /* OnBoardingScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnBoardingScreen.swift; path = "../../../../OnBoardScreen copia/OnBoardingScreen.swift"; sourceTree = "<group>"; };
+		C37FBA032AFBC400009E7C77 /* OnBoardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardItem.swift; sourceTree = "<group>"; };
 		C38C40892AF3A10A00652E39 /* Newlife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Newlife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C38C408C2AF3A10A00652E39 /* NewlifeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewlifeApp.swift; sourceTree = "<group>"; };
 		C38C408E2AF3A10A00652E39 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
@@ -92,6 +106,7 @@
 		C38C40A92AF3A10D00652E39 /* NewlifeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewlifeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C38C40B62AF3ACA400652E39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C38C40B72AF3B24200652E39 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		C3C3A7422AFBDBD500D2E41C /* greenBin.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = greenBin.json; sourceTree = "<group>"; };
 		C3D894C52AF81D26005A3FA7 /* ScannerDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerDataViewModel.swift; sourceTree = "<group>"; };
 		C3D894C72AF81D8B005A3FA7 /* DataScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataScannerView.swift; sourceTree = "<group>"; };
 		C3D894C92AF8209B005A3FA7 /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
@@ -106,6 +121,7 @@
 			files = (
 				C36CEC442AF81AD6000CE30D /* CodeScanner in Frameworks */,
 				6B8C87D820EDD1E795991C7F /* Pods_Newlife.framework in Frameworks */,
+				C3C3A7452AFBE03A00D2E41C /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +233,7 @@
 		C372F39C2AF5100D0094450E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C37FB9F92AFBC355009E7C77 /* OnBoardingScreen */,
 				C34317692AF9BD2F007B59A8 /* Map */,
 				C302637E2AFA7A19005437BB /* News */,
 				C36CEC382AF8039B000CE30D /* Settings */,
@@ -244,6 +261,20 @@
 				C372F3A52AF529EE0094450E /* TabPosition.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		C37FB9F92AFBC355009E7C77 /* OnBoardingScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C3C3A7422AFBDBD500D2E41C /* greenBin.json */,
+				C30466292AFBE2DD00A38AB4 /* scanBarcode.json */,
+				C304662B2AFBE35E00A38AB4 /* plantGrowing.json */,
+				C30466272AFBE1D600A38AB4 /* handPlant.json */,
+				C37FB9FB2AFBC361009E7C77 /* OnBoardingScreen.swift */,
+				C37FB9FA2AFBC361009E7C77 /* ResizableLottieView.swift */,
+				C37FBA032AFBC400009E7C77 /* OnBoardItem.swift */,
+			);
+			path = OnBoardingScreen;
 			sourceTree = "<group>";
 		};
 		C38C40802AF3A10A00652E39 = {
@@ -350,6 +381,7 @@
 			name = Newlife;
 			packageProductDependencies = (
 				C36CEC432AF81AD6000CE30D /* CodeScanner */,
+				C3C3A7442AFBE03A00D2E41C /* Lottie */,
 			);
 			productName = Newlife;
 			productReference = C38C40892AF3A10A00652E39 /* Newlife.app */;
@@ -425,6 +457,7 @@
 			mainGroup = C38C40802AF3A10A00652E39;
 			packageReferences = (
 				C36CEC422AF81AD6000CE30D /* XCRemoteSwiftPackageReference "CodeScanner" */,
+				C37FBA002AFBC3DA009E7C77 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = C38C408A2AF3A10A00652E39 /* Products */;
 			projectDirPath = "";
@@ -443,8 +476,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C38C40B82AF3B24200652E39 /* Launch Screen.storyboard in Resources */,
+				C304662C2AFBE35E00A38AB4 /* plantGrowing.json in Resources */,
 				C38C40942AF3A10C00652E39 /* Preview Assets.xcassets in Resources */,
 				C38C40912AF3A10C00652E39 /* Assets.xcassets in Resources */,
+				C3C3A7432AFBDBD500D2E41C /* greenBin.json in Resources */,
+				C30466282AFBE1D600A38AB4 /* handPlant.json in Resources */,
+				C304662A2AFBE2DD00A38AB4 /* scanBarcode.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,6 +560,8 @@
 				C3FBFCAA2AF5459000A907D3 /* NewsListView.swift in Sources */,
 				C30263802AFA7A2E005437BB /* NewsDetailView.swift in Sources */,
 				C3366C382AF6F80E007CF373 /* SettingsViewModel.swift in Sources */,
+				C37FBA042AFBC400009E7C77 /* OnBoardItem.swift in Sources */,
+				C37FB9FD2AFBC361009E7C77 /* OnBoardingScreen.swift in Sources */,
 				C372F3A22AF529C00094450E /* TabBarView.swift in Sources */,
 				C372F39B2AF510020094450E /* SettingsView.swift in Sources */,
 				C38C408F2AF3A10A00652E39 /* NewsView.swift in Sources */,
@@ -533,6 +572,7 @@
 				C372F39F2AF529740094450E /* Tab.swift in Sources */,
 				C36CEC3F2AF81424000CE30D /* BackButton.swift in Sources */,
 				C372F3A82AF5352E0094450E /* ContentView.swift in Sources */,
+				C37FB9FC2AFBC361009E7C77 /* ResizableLottieView.swift in Sources */,
 				C38C408D2AF3A10A00652E39 /* NewlifeApp.swift in Sources */,
 				C372F3992AF50FF90094450E /* MapView.swift in Sources */,
 			);
@@ -721,9 +761,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.giulioaterno.Newlife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -758,9 +801,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.giulioaterno.Newlife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -890,6 +936,14 @@
 				minimumVersion = 2.3.3;
 			};
 		};
+		C37FBA002AFBC3DA009E7C77 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.3.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -897,6 +951,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C36CEC422AF81AD6000CE30D /* XCRemoteSwiftPackageReference "CodeScanner" */;
 			productName = CodeScanner;
+		};
+		C3C3A7442AFBE03A00D2E41C /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C37FBA002AFBC3DA009E7C77 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
