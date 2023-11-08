@@ -79,6 +79,7 @@
 		C372F3A32AF529DA0094450E /* TabShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabShape.swift; sourceTree = "<group>"; };
 		C372F3A52AF529EE0094450E /* TabPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPosition.swift; sourceTree = "<group>"; };
 		C372F3A72AF5352E0094450E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C378C3002AFBAEB400940851 /* Newlife.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Newlife.entitlements; sourceTree = "<group>"; };
 		C38C40892AF3A10A00652E39 /* Newlife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Newlife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C38C408C2AF3A10A00652E39 /* NewlifeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewlifeApp.swift; sourceTree = "<group>"; };
 		C38C408E2AF3A10A00652E39 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
@@ -276,6 +277,7 @@
 		C38C408B2AF3A10A00652E39 /* Newlife */ = {
 			isa = PBXGroup;
 			children = (
+				C378C3002AFBAEB400940851 /* Newlife.entitlements */,
 				C38C40B62AF3ACA400652E39 /* Info.plist */,
 				C38C408C2AF3A10A00652E39 /* NewlifeApp.swift */,
 				C38C40902AF3A10C00652E39 /* Assets.xcassets */,
@@ -694,6 +696,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Newlife/Newlife.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Newlife/Preview Content\"";
@@ -730,6 +733,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Newlife/Newlife.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Newlife/Preview Content\"";
