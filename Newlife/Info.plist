@@ -2,6 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleIdentifier</key>
+	<string></string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>NoyhSlim-SemiLight.ttf</string>
+		<string>SenkronBlokBold.otf</string>
+		<string>NoyhSlim-Regular.ttf</string>
+	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Permetti a Newlife ti ottenere la tua posizione per ottenere indicazioni </string>
 	<key>NSCameraUsageDescription</key>

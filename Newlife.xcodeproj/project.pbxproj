@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6B8C87D820EDD1E795991C7F /* Pods_Newlife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93ABB08767E1DE20381C1D45 /* Pods_Newlife.framework */; };
 		C30263802AFA7A2E005437BB /* NewsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C302637F2AFA7A2E005437BB /* NewsDetailView.swift */; };
 		C30466282AFBE1D600A38AB4 /* handPlant.json in Resources */ = {isa = PBXBuildFile; fileRef = C30466272AFBE1D600A38AB4 /* handPlant.json */; };
 		C304662A2AFBE2DD00A38AB4 /* scanBarcode.json in Resources */ = {isa = PBXBuildFile; fileRef = C30466292AFBE2DD00A38AB4 /* scanBarcode.json */; };
 		C304662C2AFBE35E00A38AB4 /* plantGrowing.json in Resources */ = {isa = PBXBuildFile; fileRef = C304662B2AFBE35E00A38AB4 /* plantGrowing.json */; };
+		C30EB1BF2AFCF100005FCC62 /* Gurup St�dyo - Senkron-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C30EB1BD2AFCF100005FCC62 /* Gurup St�dyo - Senkron-Bold.otf */; };
+		C30EB1C02AFCF100005FCC62 /* SenkronBlokBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C30EB1BE2AFCF100005FCC62 /* SenkronBlokBold.otf */; };
 		C3366C382AF6F80E007CF373 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3366C372AF6F80E007CF373 /* SettingsViewModel.swift */; };
 		C343176B2AF9BD45007B59A8 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C343176A2AF9BD45007B59A8 /* LocationManager.swift */; };
 		C36CEC3A2AF803B1000CE30D /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36CEC392AF803B1000CE30D /* PrivacyPolicyView.swift */; };
@@ -29,9 +30,9 @@
 		C372F3A42AF529DA0094450E /* TabShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372F3A32AF529DA0094450E /* TabShape.swift */; };
 		C372F3A62AF529EE0094450E /* TabPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372F3A52AF529EE0094450E /* TabPosition.swift */; };
 		C372F3A82AF5352E0094450E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372F3A72AF5352E0094450E /* ContentView.swift */; };
-		C37FB9FC2AFBC361009E7C77 /* ResizableLottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37FB9FA2AFBC361009E7C77 /* ResizableLottieView.swift */; };
-		C37FB9FD2AFBC361009E7C77 /* OnBoardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37FB9FB2AFBC361009E7C77 /* OnBoardingScreen.swift */; };
 		C37FBA042AFBC400009E7C77 /* OnBoardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37FBA032AFBC400009E7C77 /* OnBoardItem.swift */; };
+		C38BED9D2AFBF67400730AFB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C38BED9C2AFBF67400730AFB /* Alamofire */; };
+		C38BEDA02AFBF77C00730AFB /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = C38BED9F2AFBF77C00730AFB /* SwiftSoup */; };
 		C38C408D2AF3A10A00652E39 /* NewlifeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38C408C2AF3A10A00652E39 /* NewlifeApp.swift */; };
 		C38C408F2AF3A10A00652E39 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38C408E2AF3A10A00652E39 /* NewsView.swift */; };
 		C38C40912AF3A10C00652E39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C38C40902AF3A10C00652E39 /* Assets.xcassets */; };
@@ -40,6 +41,14 @@
 		C38C40A82AF3A10D00652E39 /* NewlifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38C40A72AF3A10D00652E39 /* NewlifeUITests.swift */; };
 		C38C40AA2AF3A10D00652E39 /* NewlifeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38C40A92AF3A10D00652E39 /* NewlifeUITestsLaunchTests.swift */; };
 		C38C40B82AF3B24200652E39 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C38C40B72AF3B24200652E39 /* Launch Screen.storyboard */; };
+		C3A1D2F42AFCF27E00B3ECC9 /* FontsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A1D2F32AFCF27D00B3ECC9 /* FontsManager.swift */; };
+		C3A1D2FD2AFCF55E00B3ECC9 /* NoyhSlim-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C3A1D2FB2AFCF55E00B3ECC9 /* NoyhSlim-Regular.ttf */; };
+		C3A1D2FE2AFCF55E00B3ECC9 /* NoyhSlim-SemiLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C3A1D2FC2AFCF55E00B3ECC9 /* NoyhSlim-SemiLight.ttf */; };
+		C3A1D3002AFD235700B3ECC9 /* BasicCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A1D2FF2AFD235700B3ECC9 /* BasicCardModel.swift */; };
+		C3A1D3032AFD249800B3ECC9 /* BasicCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A1D3022AFD249800B3ECC9 /* BasicCardView.swift */; };
+		C3A1D3052AFD58C200B3ECC9 /* CentralCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A1D3042AFD58C200B3ECC9 /* CentralCardView.swift */; };
+		C3A1D3152AFD9C3700B3ECC9 /* OnBoardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A1D3142AFD9C3700B3ECC9 /* OnBoardingScreen.swift */; };
+		C3A1D3172AFD9EC600B3ECC9 /* ResizableLottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A1D3162AFD9EC600B3ECC9 /* ResizableLottieView.swift */; };
 		C3C3A7432AFBDBD500D2E41C /* greenBin.json in Resources */ = {isa = PBXBuildFile; fileRef = C3C3A7422AFBDBD500D2E41C /* greenBin.json */; };
 		C3C3A7452AFBE03A00D2E41C /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = C3C3A7442AFBE03A00D2E41C /* Lottie */; };
 		C3D894C62AF81D26005A3FA7 /* ScannerDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D894C52AF81D26005A3FA7 /* ScannerDataViewModel.swift */; };
@@ -66,14 +75,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C38BED9A2AFBF3EB00730AFB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		5503C9DEEE399FFEF04144F8 /* Pods-Newlife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Newlife.release.xcconfig"; path = "Target Support Files/Pods-Newlife/Pods-Newlife.release.xcconfig"; sourceTree = "<group>"; };
-		93ABB08767E1DE20381C1D45 /* Pods_Newlife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Newlife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7C3A8BA9C663DB32A413388 /* Pods-Newlife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Newlife.debug.xcconfig"; path = "Target Support Files/Pods-Newlife/Pods-Newlife.debug.xcconfig"; sourceTree = "<group>"; };
 		C302637F2AFA7A2E005437BB /* NewsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailView.swift; sourceTree = "<group>"; };
 		C30466272AFBE1D600A38AB4 /* handPlant.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = handPlant.json; sourceTree = "<group>"; };
 		C30466292AFBE2DD00A38AB4 /* scanBarcode.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = scanBarcode.json; sourceTree = "<group>"; };
 		C304662B2AFBE35E00A38AB4 /* plantGrowing.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = plantGrowing.json; sourceTree = "<group>"; };
+		C30EB1BD2AFCF100005FCC62 /* Gurup St�dyo - Senkron-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gurup St�dyo - Senkron-Bold.otf"; sourceTree = "<group>"; };
+		C30EB1BE2AFCF100005FCC62 /* SenkronBlokBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SenkronBlokBold.otf; sourceTree = "<group>"; };
 		C3366C372AF6F80E007CF373 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		C343176A2AF9BD45007B59A8 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		C36CEC392AF803B1000CE30D /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
@@ -91,9 +112,8 @@
 		C372F3A52AF529EE0094450E /* TabPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPosition.swift; sourceTree = "<group>"; };
 		C372F3A72AF5352E0094450E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C378C3002AFBAEB400940851 /* Newlife.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Newlife.entitlements; sourceTree = "<group>"; };
-		C37FB9FA2AFBC361009E7C77 /* ResizableLottieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResizableLottieView.swift; path = "../../../../OnBoardScreen copia/ResizableLottieView.swift"; sourceTree = "<group>"; };
-		C37FB9FB2AFBC361009E7C77 /* OnBoardingScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnBoardingScreen.swift; path = "../../../../OnBoardScreen copia/OnBoardingScreen.swift"; sourceTree = "<group>"; };
 		C37FBA032AFBC400009E7C77 /* OnBoardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardItem.swift; sourceTree = "<group>"; };
+		C38BED942AFBF3CB00730AFB /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C38C40892AF3A10A00652E39 /* Newlife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Newlife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C38C408C2AF3A10A00652E39 /* NewlifeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewlifeApp.swift; sourceTree = "<group>"; };
 		C38C408E2AF3A10A00652E39 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
@@ -106,6 +126,14 @@
 		C38C40A92AF3A10D00652E39 /* NewlifeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewlifeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C38C40B62AF3ACA400652E39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C38C40B72AF3B24200652E39 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		C3A1D2F32AFCF27D00B3ECC9 /* FontsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsManager.swift; sourceTree = "<group>"; };
+		C3A1D2FB2AFCF55E00B3ECC9 /* NoyhSlim-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NoyhSlim-Regular.ttf"; sourceTree = "<group>"; };
+		C3A1D2FC2AFCF55E00B3ECC9 /* NoyhSlim-SemiLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NoyhSlim-SemiLight.ttf"; sourceTree = "<group>"; };
+		C3A1D2FF2AFD235700B3ECC9 /* BasicCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCardModel.swift; sourceTree = "<group>"; };
+		C3A1D3022AFD249800B3ECC9 /* BasicCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCardView.swift; sourceTree = "<group>"; };
+		C3A1D3042AFD58C200B3ECC9 /* CentralCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentralCardView.swift; sourceTree = "<group>"; };
+		C3A1D3142AFD9C3700B3ECC9 /* OnBoardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingScreen.swift; sourceTree = "<group>"; };
+		C3A1D3162AFD9EC600B3ECC9 /* ResizableLottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizableLottieView.swift; sourceTree = "<group>"; };
 		C3C3A7422AFBDBD500D2E41C /* greenBin.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = greenBin.json; sourceTree = "<group>"; };
 		C3D894C52AF81D26005A3FA7 /* ScannerDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerDataViewModel.swift; sourceTree = "<group>"; };
 		C3D894C72AF81D8B005A3FA7 /* DataScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataScannerView.swift; sourceTree = "<group>"; };
@@ -120,7 +148,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C36CEC442AF81AD6000CE30D /* CodeScanner in Frameworks */,
-				6B8C87D820EDD1E795991C7F /* Pods_Newlife.framework in Frameworks */,
+				C38BEDA02AFBF77C00730AFB /* SwiftSoup in Frameworks */,
+				C38BED9D2AFBF67400730AFB /* Alamofire in Frameworks */,
 				C3C3A7452AFBE03A00D2E41C /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,8 +174,6 @@
 		5E938FF5FB4F492E5C98A464 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A7C3A8BA9C663DB32A413388 /* Pods-Newlife.debug.xcconfig */,
-				5503C9DEEE399FFEF04144F8 /* Pods-Newlife.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -154,7 +181,7 @@
 		8BD5907CB85ECAB662011A43 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				93ABB08767E1DE20381C1D45 /* Pods_Newlife.framework */,
+				C38BED942AFBF3CB00730AFB /* Alamofire.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -214,6 +241,7 @@
 		C372F38C2AF5039E0094450E /* UIItems */ = {
 			isa = PBXGroup;
 			children = (
+				C3A1D3012AFD248D00B3ECC9 /* CardView */,
 				C372F3A02AF5298C0094450E /* TabBar */,
 				C38C40B72AF3B24200652E39 /* Launch Screen.storyboard */,
 				C3FBFCA92AF5459000A907D3 /* NewsListView.swift */,
@@ -270,9 +298,9 @@
 				C30466292AFBE2DD00A38AB4 /* scanBarcode.json */,
 				C304662B2AFBE35E00A38AB4 /* plantGrowing.json */,
 				C30466272AFBE1D600A38AB4 /* handPlant.json */,
-				C37FB9FB2AFBC361009E7C77 /* OnBoardingScreen.swift */,
-				C37FB9FA2AFBC361009E7C77 /* ResizableLottieView.swift */,
+				C3A1D3162AFD9EC600B3ECC9 /* ResizableLottieView.swift */,
 				C37FBA032AFBC400009E7C77 /* OnBoardItem.swift */,
+				C3A1D3142AFD9C3700B3ECC9 /* OnBoardingScreen.swift */,
 			);
 			path = OnBoardingScreen;
 			sourceTree = "<group>";
@@ -280,6 +308,7 @@
 		C38C40802AF3A10A00652E39 = {
 			isa = PBXGroup;
 			children = (
+				C30EB1BD2AFCF100005FCC62 /* Gurup St�dyo - Senkron-Bold.otf */,
 				C36CEC3D2AF81418000CE30D /* Support */,
 				C3366C362AF6ED2D007CF373 /* App */,
 				C3366C352AF6E953007CF373 /* ViewModels */,
@@ -287,6 +316,7 @@
 				C372F38F2AF50D960094450E /* Items */,
 				C372F39C2AF5100D0094450E /* Views */,
 				C38C408B2AF3A10A00652E39 /* Newlife */,
+				C3CA7AA12AFCE53000B8DEED /* Fonts */,
 				C38C409C2AF3A10D00652E39 /* NewlifeTests */,
 				C38C40A62AF3A10D00652E39 /* NewlifeUITests */,
 				C38C408A2AF3A10A00652E39 /* Products */,
@@ -342,12 +372,33 @@
 			path = NewlifeUITests;
 			sourceTree = "<group>";
 		};
+		C3A1D3012AFD248D00B3ECC9 /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				C3A1D3022AFD249800B3ECC9 /* BasicCardView.swift */,
+			);
+			path = CardView;
+			sourceTree = "<group>";
+		};
 		C3AB94DC2AFABD2B002A4CC5 /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				C372F3942AF50FE10094450E /* HomeView.swift */,
+				C3A1D2FF2AFD235700B3ECC9 /* BasicCardModel.swift */,
+				C3A1D3042AFD58C200B3ECC9 /* CentralCardView.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		C3CA7AA12AFCE53000B8DEED /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C30EB1BE2AFCF100005FCC62 /* SenkronBlokBold.otf */,
+				C3A1D2FB2AFCF55E00B3ECC9 /* NoyhSlim-Regular.ttf */,
+				C3A1D2FC2AFCF55E00B3ECC9 /* NoyhSlim-SemiLight.ttf */,
+				C3A1D2F32AFCF27D00B3ECC9 /* FontsManager.swift */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		C3D894C42AF81D06005A3FA7 /* Scan */ = {
@@ -368,11 +419,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C38C40AD2AF3A10D00652E39 /* Build configuration list for PBXNativeTarget "Newlife" */;
 			buildPhases = (
-				EFF9428A74CEFD2D32BA1B59 /* [CP] Check Pods Manifest.lock */,
 				C38C40852AF3A10A00652E39 /* Sources */,
 				C38C40862AF3A10A00652E39 /* Frameworks */,
 				C38C40872AF3A10A00652E39 /* Resources */,
-				4EB981E4B498A22CFA5AB1DF /* [CP] Embed Pods Frameworks */,
+				C38BED9A2AFBF3EB00730AFB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -382,6 +432,8 @@
 			packageProductDependencies = (
 				C36CEC432AF81AD6000CE30D /* CodeScanner */,
 				C3C3A7442AFBE03A00D2E41C /* Lottie */,
+				C38BED9C2AFBF67400730AFB /* Alamofire */,
+				C38BED9F2AFBF77C00730AFB /* SwiftSoup */,
 			);
 			productName = Newlife;
 			productReference = C38C40892AF3A10A00652E39 /* Newlife.app */;
@@ -458,6 +510,8 @@
 			packageReferences = (
 				C36CEC422AF81AD6000CE30D /* XCRemoteSwiftPackageReference "CodeScanner" */,
 				C37FBA002AFBC3DA009E7C77 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				C38BED9B2AFBF67400730AFB /* XCRemoteSwiftPackageReference "Alamofire" */,
+				C38BED9E2AFBF77C00730AFB /* XCRemoteSwiftPackageReference "SwiftSoup" */,
 			);
 			productRefGroup = C38C408A2AF3A10A00652E39 /* Products */;
 			projectDirPath = "";
@@ -475,10 +529,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C30EB1C02AFCF100005FCC62 /* SenkronBlokBold.otf in Resources */,
 				C38C40B82AF3B24200652E39 /* Launch Screen.storyboard in Resources */,
+				C3A1D2FD2AFCF55E00B3ECC9 /* NoyhSlim-Regular.ttf in Resources */,
 				C304662C2AFBE35E00A38AB4 /* plantGrowing.json in Resources */,
 				C38C40942AF3A10C00652E39 /* Preview Assets.xcassets in Resources */,
 				C38C40912AF3A10C00652E39 /* Assets.xcassets in Resources */,
+				C3A1D2FE2AFCF55E00B3ECC9 /* NoyhSlim-SemiLight.ttf in Resources */,
+				C30EB1BF2AFCF100005FCC62 /* Gurup St�dyo - Senkron-Bold.otf in Resources */,
 				C3C3A7432AFBDBD500D2E41C /* greenBin.json in Resources */,
 				C30466282AFBE1D600A38AB4 /* handPlant.json in Resources */,
 				C304662A2AFBE2DD00A38AB4 /* scanBarcode.json in Resources */,
@@ -501,54 +559,13 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		4EB981E4B498A22CFA5AB1DF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Newlife/Pods-Newlife-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Newlife/Pods-Newlife-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Newlife/Pods-Newlife-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EFF9428A74CEFD2D32BA1B59 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Newlife-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		C38C40852AF3A10A00652E39 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C3FBFCAC2AF5607100A907D3 /* NewsModel.swift in Sources */,
+				C3A1D3032AFD249800B3ECC9 /* BasicCardView.swift in Sources */,
 				C3D894C62AF81D26005A3FA7 /* ScannerDataViewModel.swift in Sources */,
 				C372F3972AF50FEE0094450E /* ViewInsideScanView.swift in Sources */,
 				C36CEC412AF81728000CE30D /* LicenseView.swift in Sources */,
@@ -559,21 +576,24 @@
 				C372F3912AF50DA30094450E /* NewsItem.swift in Sources */,
 				C3FBFCAA2AF5459000A907D3 /* NewsListView.swift in Sources */,
 				C30263802AFA7A2E005437BB /* NewsDetailView.swift in Sources */,
+				C3A1D3152AFD9C3700B3ECC9 /* OnBoardingScreen.swift in Sources */,
 				C3366C382AF6F80E007CF373 /* SettingsViewModel.swift in Sources */,
 				C37FBA042AFBC400009E7C77 /* OnBoardItem.swift in Sources */,
-				C37FB9FD2AFBC361009E7C77 /* OnBoardingScreen.swift in Sources */,
 				C372F3A22AF529C00094450E /* TabBarView.swift in Sources */,
 				C372F39B2AF510020094450E /* SettingsView.swift in Sources */,
 				C38C408F2AF3A10A00652E39 /* NewsView.swift in Sources */,
+				C3A1D3002AFD235700B3ECC9 /* BasicCardModel.swift in Sources */,
 				C372F3952AF50FE10094450E /* HomeView.swift in Sources */,
 				C3D894C82AF81D8B005A3FA7 /* DataScannerView.swift in Sources */,
 				C372F3A62AF529EE0094450E /* TabPosition.swift in Sources */,
 				C36CEC3A2AF803B1000CE30D /* PrivacyPolicyView.swift in Sources */,
 				C372F39F2AF529740094450E /* Tab.swift in Sources */,
 				C36CEC3F2AF81424000CE30D /* BackButton.swift in Sources */,
+				C3A1D3172AFD9EC600B3ECC9 /* ResizableLottieView.swift in Sources */,
 				C372F3A82AF5352E0094450E /* ContentView.swift in Sources */,
-				C37FB9FC2AFBC361009E7C77 /* ResizableLottieView.swift in Sources */,
 				C38C408D2AF3A10A00652E39 /* NewlifeApp.swift in Sources */,
+				C3A1D3052AFD58C200B3ECC9 /* CentralCardView.swift in Sources */,
+				C3A1D2F42AFCF27E00B3ECC9 /* FontsManager.swift in Sources */,
 				C372F3992AF50FF90094450E /* MapView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -732,7 +752,6 @@
 		};
 		C38C40AE2AF3A10D00652E39 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7C3A8BA9C663DB32A413388 /* Pods-Newlife.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -772,7 +791,6 @@
 		};
 		C38C40AF2AF3A10D00652E39 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5503C9DEEE399FFEF04144F8 /* Pods-Newlife.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -944,6 +962,22 @@
 				minimumVersion = 4.3.3;
 			};
 		};
+		C38BED9B2AFBF67400730AFB /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+		C38BED9E2AFBF77C00730AFB /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.6.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -951,6 +985,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C36CEC422AF81AD6000CE30D /* XCRemoteSwiftPackageReference "CodeScanner" */;
 			productName = CodeScanner;
+		};
+		C38BED9C2AFBF67400730AFB /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C38BED9B2AFBF67400730AFB /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		C38BED9F2AFBF77C00730AFB /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C38BED9E2AFBF77C00730AFB /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
 		};
 		C3C3A7442AFBE03A00D2E41C /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
