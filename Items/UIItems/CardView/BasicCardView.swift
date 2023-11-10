@@ -20,7 +20,7 @@ struct BasicCardView: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 20, style: .continuous)
-                .fill(Color.green)
+                .fill(Color("logoColor"))
                 
             VStack(alignment: .leading, spacing: -20) {
                 Text(model.title)
